@@ -1,0 +1,242 @@
+body{
+    width: auto;
+    height: 100%;
+    margin:0;
+}
+
+/*Esta es la parte superior*/
+
+/*Engloba todo lo que va dentro de la zona superior*/
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 125px;
+    width: 100%;
+    background-color: #F6F5F5;
+    align-items: center; 
+}
+
+
+/*Seccion central de nuestro header*/
+.navegador{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+.nav{ 
+    padding: 15px;
+}
+
+a{
+    color: #949494;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: crimson;
+}
+/*Fin seccion central de nuestro header*/
+
+
+/*Tamaño y ubicacion del logo*/
+.logo{
+    width: 50%;
+    text-align: left;
+}
+
+.logo img{
+    margin-left: 20%;
+    height: 100px;
+    width: 100px;
+}
+/*Fin amaño y ubicacion del logo*/
+
+
+/*Tamaño y ubicacion del ticket*/
+.ticket{
+    width: 50%;
+    text-align: right;
+}
+
+.btnTicket{
+  font-size: 16px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bolder;
+  background: linear-gradient(to right, rgb(5, 62, 247), rgb(123, 230, 136));
+  margin-right: 16%;
+  color: white;
+  padding: 1em 2em; /* em es una unidad relativa, parecida al %, 1em = 16px */
+  position: relative;
+  isolation: isolate;
+}
+/*Fin tamaño y ubicacion del ticket*/
+
+/*Fin parte superior*/
+
+
+
+/*Inicio zona del medio*/
+
+
+/*Tabs*/
+
+.columna{
+  display: flex;
+  flex-direction: column;
+}
+
+#prueba1{
+  width:100%;
+  text-align:center;
+  background-color: rgb(182, 179, 179);
+}
+
+#prueba2{
+  width:100%;
+  text-align:center;
+  background-color: rgb(209, 209, 209);
+}
+
+#left {
+  float:left;
+  margin-left: 0px;
+  margin-top: 2.5%;
+  margin-left: 5%;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bolder;
+  color: black;
+}
+
+#center {
+  display: inline-block;
+  margin:0 auto;
+  width:500px;
+}
+
+#right {
+  float:right;
+  width:100px;
+  margin-top: 4%;
+  margin-right: 5%;
+}
+
+#right .btnCompra{
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bolder;
+  color: black;
+  height: 40px;
+  width: 100px;
+  background: linear-gradient(to right, rgb(223, 47, 47), rgb(235, 236, 235));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 850px;
+  box-shadow: 0 48px 80px -32px rgba(0, 0, 0, 0.25);
+  justify-content: left;
+  margin-left: 22%;
+  margin-top: 6%;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+}
+
+.label {
+  width: 100%;
+  padding: 20px 30px;
+  background: #e5e5e5;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #7f7f7f;
+  transition: background 0.1s, color 0.1s;
+}
+
+.input:checked + .label {
+  background: black;
+  color: white;
+}
+
+.panel {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .label {
+       width: auto;
+  }
+
+  .panel {
+       order: 99;
+  }
+}
+
+.input:checked + .label + .panel {
+  display: block;
+}
+
+   
+/*Fin tabs*/
+
+.fondo {
+  height: 800px;
+  background-image: url(/imagenes/fondo.jpg);
+}
+
+/*Fin zona del medio*/
+
+
+/*Inicio zona inferior*/
+
+/*Inicio del footer*/
+
+footer{
+  background-color: black;
+  margin-top: 2%;
+}
+
+footer .titulo{
+    padding-top: 1%;
+    width: 10%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: bolder;
+    margin-left: 7%;
+}
+
+footer .patroLogo{
+    margin-left: 80px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    
+}
+
+footer .logoPatrocinio{
+    height: 50px;
+    margin: 20px;
+}
+/*Fin del footer*/
+
+/*Fin zona inferior*/
