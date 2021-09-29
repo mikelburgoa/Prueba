@@ -1,0 +1,307 @@
+body {
+    font-family: "Arial Black", Gadget, sans-serif;
+    margin: 0;
+}
+
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 125px;
+    width: 100%;
+    background-color: #F6F5F5;
+
+    align-items: center;
+}
+.navegador{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+.nav{ 
+    padding: 15px;
+}
+
+a{
+    color: #949494;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: crimson;
+}
+
+.logo{
+    width: 50%;
+    text-align: left;
+}
+
+.logo img{
+    margin-left: 20%;
+    height: 100px;
+    width: 100px;
+}
+
+.ticket{
+    width: 50%;
+    text-align: right;
+}
+
+.btnTicket{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(to right, rgb(5, 62, 247), rgb(123, 230, 136));
+    margin-right: 16%;
+    color: white;
+    padding: 1em 2em; /* em es una unidad relativa, parecida al %, 1em = 16px */
+    position: relative;
+    isolation: isolate;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    /*padding: 2em;*/
+}
+
+.container Img:hover {
+    filter: opacity(.5);
+}
+
+.grid {
+    width: 60%;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(100px, auto);
+}
+
+.grid h2 {
+    inline-size: 100%;
+}
+
+.grid img {
+    inline-size: 100%;
+}
+
+
+.cartel{
+    
+    font-size: 20px;
+    letter-spacing: -0.8px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: url(imagenes/img.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    background-size: cover;
+
+}
+
+footer{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    color: white;
+    inline-size: 100%;
+  }
+  footer .patrocinios .patroLogo div {
+    width: 10em;
+    height: 4em;
+    margin-right: 50px;
+  }
+  
+  footer .titulo{
+      margin-top: 40px;
+      width: 10%;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: bolder;
+      margin-left: 40px;
+  }
+  
+  footer .patroLogo{
+      margin-left: 80px;
+      margin-top: 20px;
+      display: flex;
+      padding: 10px;
+      flex-direction: row;
+    
+      
+  }
+  
+  footer .logoPatrocinio{
+      height: 100%;
+      width: 100%;
+      margin: 20px;
+  }
+
+  footer .logoPatrocinio img {
+      height:15em;
+      width:5em;
+  }
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 270px;
+        width: 100%;
+        background-color: #F6F5F5;
+        align-items: center;
+    }
+    .navegador{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(50px, auto);
+        justify-content: center;
+        height: 50px;
+        align-items: center;
+        margin-left: 15px;
+    }
+    
+    .nav{ 
+        padding: 15px;
+    }
+    
+    a{
+        color: #949494;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bolder;
+    }
+    
+    a:hover{
+        color: crimson;
+    }
+    
+    .logo{
+        width: 50%;
+        margin-left: 1em;
+        text-align: left;
+    }
+    
+    .logo img{
+        margin-left: 20%;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .ticket{
+        width: 50%;
+        text-align: right;
+        margin-top: 4em;
+    }
+    
+    .btnTicket{
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        background: linear-gradient(to right, rgb(5, 62, 247), rgb(123, 230, 136));
+        margin-right: 16%;
+        color: white;
+        padding: 1em 2em; /* em es una unidad relativa, parecida al %, 1em = 16px */
+        position: relative;
+        isolation: isolate;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(100px, auto);
+    }
+    
+    .grid h2 {
+        inline-size: 100%;
+    }
+    
+    .grid img {
+        inline-size: 100%;
+    }
+    footer{
+        background-color: black;
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        color: white;
+        inline-size: 100%;
+      }
+      
+      footer .titulo{
+          margin-top: 40px;
+          width: 10%;
+          text-align: center;
+          color: white;
+          font-size: 20px;
+          font-family: sans-serif;
+          font-weight: bolder;
+          
+      }
+      
+      footer .patroLogo{
+          margin-top: 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: minmax(100px, auto);
+          width: 20%;
+          margin:0;
+          
+      }
+
+    div .patrocinios {
+        height: 50vh;
+      }
+      
+      footer .patrocinios .titulo .patroLogo div {
+        width: 5em;
+        height: 10em;
+        
+      }
+
+      footer .logoPatrocinio{
+          height: 10vh;
+          width: 40vw;
+          margin:0;
+      }
+
+      #seat {
+          display: none;
+      }
+
+}
+
