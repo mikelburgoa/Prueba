@@ -199,7 +199,7 @@ a:hover{
 
 .fondo {
   height: 800px;
-  background-image: url(/imagenes/fondo.jpg);
+  background-image: url(../imagenes/fondo.jpg);
 }
 
 /*Fin zona del medio*/
