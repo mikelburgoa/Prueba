@@ -4,6 +4,7 @@ body{
     margin:0;
 }
 
+
 /*Esta es la parte superior*/
 
 /*Engloba todo lo que va dentro de la zona superior*/
@@ -36,7 +37,7 @@ a{
     color: #949494;
     text-decoration: none;
     font-size: 16px;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: sans-serif;
     font-weight: bolder;
 }
 
@@ -68,14 +69,14 @@ a:hover{
 
 .btnTicket{
   font-size: 16px;
-    font-family: sans-serif;
-    font-weight: bolder;
-    background: linear-gradient(to right, rgb(5, 62, 247), rgb(123, 230, 136));
-    margin-right: 16%;
-    color: white;
-    padding: 1em 2em; /* em es una unidad relativa, parecida al %, 1em = 16px */
-    position: relative;
-    isolation: isolate;
+  font-family: sans-serif;
+  font-weight: bolder;
+  background: linear-gradient(to right, rgb(5, 62, 247), rgb(123, 230, 136));
+  margin-right: 16%;
+  color: white;
+  padding: 1em 2em; /* em es una unidad relativa, parecida al %, 1em = 16px */
+  position: relative;
+  isolation: isolate;
 }
 /*Fin tamaño y ubicacion del ticket*/
 
@@ -110,7 +111,7 @@ a:hover{
   margin-left: 0px;
   margin-top: 2.5%;
   margin-left: 5%;
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: sans-serif;
   font-weight: bolder;
   color: black;
 }
@@ -129,7 +130,7 @@ a:hover{
 }
 
 #right .btnCompra{
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: sans-serif;
   font-weight: bolder;
   color: black;
   height: 40px;
@@ -166,7 +167,6 @@ a:hover{
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
-  font-family: "Arial Black", Gadget, sans-serif;
   color: #7f7f7f;
   transition: background 0.1s, color 0.1s;
 }
@@ -199,7 +199,8 @@ a:hover{
 
 .fondo {
   height: 800px;
-  background-image: url(../imagenes/fondo.jpg);
+  background-image: url(imagenes/fondo.jpg);
+  background-size: cover;
 }
 
 /*Fin zona del medio*/
@@ -211,33 +212,257 @@ a:hover{
 
 footer{
   background-color: black;
-  margin-top: 2%;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  color: white;
+  inline-size: 100%;
+}
+footer .patrocinios .patroLogo div {
+  width: 10em;
+  height: 4em;
+  margin-right: 50px;
 }
 
 footer .titulo{
-    padding-top: 1%;
+    margin-top: 40px;
     width: 10%;
     text-align: center;
     color: white;
     font-size: 20px;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: sans-serif;
     font-weight: bolder;
-    margin-left: 7%;
+    margin-left: 40px;
 }
 
 footer .patroLogo{
     margin-left: 80px;
     margin-top: 20px;
     display: flex;
+    padding: 10px;
     flex-direction: row;
-    width: 20%;
+  
     
 }
 
 footer .logoPatrocinio{
-    height: 50px;
+    height: 100%;
+    width: 100%;
     margin: 20px;
+}
+
+footer .logoPatrocinio img {
+    height:15em;
+    width:5em;
 }
 /*Fin del footer*/
 
-/*Fin zona inferior*/
+/*Inicio zona inferior*/
+
+/*Mediaquery tickets movil*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 290px;
+        width: 100%;
+        background-color: #F6F5F5;
+        align-items: center;
+    }
+    .navegador{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(50px, auto);
+        justify-content: center;
+        height: 50px;
+        align-items: center;
+        margin-left: 15px;
+    }
+    
+    .nav{ 
+        padding: 15px;
+    }
+    
+    a{
+        color: #949494;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bolder;
+    }
+    
+    a:hover{
+        color: crimson;
+    }
+    
+    .logo{
+        width: 50%;
+        margin-left: 1em;
+        text-align: left;
+    }
+    
+    .logo img{
+        margin-left: 20%;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .ticket{
+        width: 50%;
+        text-align: right;
+        margin-top: 4em;
+    }
+    
+    .btnTicket{
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        background: linear-gradient(to right, rgb(5, 62, 247), rgb(123, 230, 136));
+        margin-right: 16%;
+        color: white;
+        padding: 1em 2em; /* em es una unidad relativa, parecida al %, 1em = 16px */
+        position: relative;
+        isolation: isolate;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(100px, auto);
+    }
+    
+    .grid h2 {
+        inline-size: 100%;
+    }
+    
+    .grid img {
+        inline-size: 100%;
+    }
+    footer{
+        background-color: black;
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        color: white;
+        inline-size: 100%;
+        margin-top: 10%;
+      }
+      
+      footer .titulo{
+          margin-top: 40px;
+          width: 10%;
+          text-align: center;
+          color: white;
+          font-size: 20px;
+          font-family: sans-serif;
+          font-weight: bolder;
+          padding: 5%;
+          
+      }
+      
+      footer .patroLogo{
+          margin-top: 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: minmax(100px, auto);
+          width: 20%;
+          margin:0;
+          
+      }
+
+    div .patrocinios {
+        height: 50vh;
+      }
+      
+      footer .patrocinios .titulo .patroLogo div {
+        width: 5em;
+        height: 10em;
+        
+      }
+
+      footer .logoPatrocinio{
+          height: 10vh;
+          width: 40vw;
+          margin:0;
+      }
+
+      #seat {
+          display: none;
+      }
+
+
+      .tabla  {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 850px;
+        box-shadow: 0 48px 80px -32px rgba(0, 0, 0, 0.25);
+        justify-content: left;
+        margin: -22%;
+        margin-top: -6%;
+        
+      }
+      
+      .input {
+        position: absolute;
+        opacity: 0;
+      }
+      
+      .label {
+        width: 100%;
+        padding: 20px 30px;
+        background: #e5e5e5;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        color: #7f7f7f;
+        transition: background 0.1s, color 0.1s;
+      }
+      
+      .input:checked + .label {
+        background: black;
+        color: white;
+      }
+      
+      .panel {
+        display: none;
+      }
+      
+      
+      
+      .input:checked + .label + .panel {
+        display: block;
+      }
+
+      #prueba1{
+        width:75%;
+        text-align:center;
+        background-color: rgb(182, 179, 179);
+      }
+      
+      #prueba2{
+        width:75%;
+        text-align:center;
+        background-color: rgb(209, 209, 209);
+      }
+      html{
+        width: auto;
+        height: 100%;
+        width: 100%;
+    }
+      
+}
